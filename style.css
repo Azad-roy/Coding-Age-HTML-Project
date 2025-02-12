@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+body{
+    background: url('/img/header.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.header{
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.4);
+    height: 100%;
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap: 25px
+}
+
+.nav-links a{
+    color: white;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: #ff4c4c;
+    transition:0.3s;
+
+}
+
+.auth a{
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.sign-in{
+    color: white;
+}
+
+.sign-up{
+    background: #ff4c4c;
+    color: white;
+}
+
+.sign-up:hover{
+    background: #e63946;
+    transition:0.3s;
+}
+
+.water-brush-regular {
+    font-family: "Water Brush", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
