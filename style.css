@@ -1,7 +1,6 @@
 *{
     margin: 0;
     padding: 0;
-    /* box-sizing: border-box; */
 }
 
 body{
@@ -9,7 +8,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-
+    height: 100vh;
 }
 
 .header{
@@ -18,7 +17,8 @@ body{
     justify-content: space-between;
     align-items: center;
     background: rgba(0, 0, 0, 0.4);
-    height: 100%;
+    font-size: 24px;
+    /* height: 100%; */
 }
 
 .nav-links{
@@ -58,8 +58,147 @@ body{
     transition:0.3s;
 }
 
-.water-brush-regular {
+.nav-hero1{
     font-family: "Water Brush", serif;
     font-weight: 400;
     font-style: normal;
+    color: white;
+    font-size: 80px;
+    margin-bottom: 7px;
+}
+
+.nav-hero2{
+    font-family: "Work Sans", serif;
+    font-optical-sizing: auto;
+    font-weight:bold;
+    font-style: normal;
+    color: white;
+    font-size: 125px;
+    margin-bottom: 7px;
   }
+
+.hero-container{
+    margin: 7rem 0px 0px 7rem;
+  }
+
+.nav-hero3{
+    color: white;
+    width: 800px;
+    font-family: "Work Sans";
+    font-size: 20px;
+}
+
+.location{
+    color: white;
+    font-family: "Work Sans";
+    display: flex;
+    gap: 60px;
+    margin: 80px 0px 0px 100px;
+    font-size: 24px;
+}
+
+.location-inline{
+    display: inline;
+}
+
+.location-details{
+    position: relative;
+    bottom: 18px;
+}
+
+.location-margin{
+   margin-left: 10px;
+}
+
+.location-relative{
+    position: relative;
+    left: 25px;
+}
+
+.search-relative,search-div{
+    position: relative;
+    left: 320px;
+    bottom: 83px;
+}
+
+.search img{
+    background: linear-gradient(to right, #FF803C, #CD1A40);
+    padding: 10px;
+    width: 40px;
+    border-radius: 12px;
+}
+
+.main-transparent-cover{
+    background: rgba(0, 0, 0, 0.3);
+    height: 100vh;
+    width: 100%;
+}
+
+
+.transparent-cover{
+    background: rgba(88, 87, 87, 0.3);
+    backdrop-filter: blur(2px);
+    width: 710px;
+    height: 100px;
+    position: relative;
+    bottom: 170px;
+    z-index: -1;
+    left: 80px;
+    border-radius: 25px;
+}
+
+.fwater-brush{
+    font-family: "Water Brush", serif;
+    font-weight: 400;
+    color: #CD1A40;
+    font-size: 48px;
+}
+
+.main-font-container{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.extra-light{
+    font-family: "Work Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 72px;
+}
+
+.slider .slide{
+    aspect-ratio: 4/3;
+    object-fit: cover;
+}
+
+.slider{
+    width: 30vw;
+    display: flex;
+    height: 0%;
+    /* max-width: 600px; */
+    overflow: hidden;
+    border: 3px solid red;
+    
+}
+
+.slides{
+    display: flex;
+    width: 300;
+    animation: slide 9s infinite;
+}
+
+.slide{
+    width: 100%;
+    flex-shrink: 0;
+}
+
+@keyframes slide {
+    0% { transform: translateX(0); }
+    33.33% { transform: translateX(-100%); }
+    66.66% { transform: translateX(-200%); }
+    100% { transform: translateX(0); }
+}
